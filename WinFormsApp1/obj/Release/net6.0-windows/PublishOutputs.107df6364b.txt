@@ -1,0 +1,5 @@
+D:\Brendon\CodigoFonte\WinFormsApp1\WinFormsApp1\bin\Release\net6.0-windows\publish\WinFormsApp1.exe
+D:\Brendon\CodigoFonte\WinFormsApp1\WinFormsApp1\bin\Release\net6.0-windows\publish\WinFormsApp1.dll
+D:\Brendon\CodigoFonte\WinFormsApp1\WinFormsApp1\bin\Release\net6.0-windows\publish\WinFormsApp1.deps.json
+D:\Brendon\CodigoFonte\WinFormsApp1\WinFormsApp1\bin\Release\net6.0-windows\publish\WinFormsApp1.runtimeconfig.json
+D:\Brendon\CodigoFonte\WinFormsApp1\WinFormsApp1\bin\Release\net6.0-windows\publish\WinFormsApp1.pdb
