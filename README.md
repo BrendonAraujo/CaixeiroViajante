@@ -1,6 +1,77 @@
   # CaixeiroViajante
 Sistema para resolução do caixeiro Viajantre
 
+EN
+  # Travelingsalesman
+An systen to solve the trevalingsalesman program
+
+EN
+## Problem:
+
+  The travelsalesman is a math program, but to explain the problem, i willl change the travelsalesman by a truck.
+  <br>
+  Image a truck that needs to leave the store and make deliverys to the cities of the region in just one travel. That's the travelsalesman's problem.
+  <br><br>
+  The defination of the best route can change, because it's deppend of the variables of the analisys, for us, the best route will be the one who has the smallest distance.
+  First, the resolution for this problem seems easy, to know the best route, look at the distace of all the routes and take de smallest.
+  <br><br>
+  But, in the real problem of trevalingsalesman, the quantity of routes is <strong>R( n ) = ( n - 1 )!<strong>, so, the quantity of routes is a fatorial of the number of cities.
+  <br> 
+  <br>
+  The quantity of route grow up too much to wich city we want to add in the problem, this makes too hard to solve the problem with many cities
+  <br>
+  For exemplo, if we want to solve the problem with 19 cities, we will have 121.645.100.408.832.000 routes to look. This is to many routes 😱.
+  <br>
+  <br>
+  ![image](https://user-images.githubusercontent.com/61763480/173256689-3447837f-a9b2-4817-897e-f002ff3733be.png)
+  <br>
+  <br>
+  This quantity of cities makes impossible to solve this problem just look route by route.
+  <br>
+  Out project try to solve the problem using a genetic algorithm (an IA implementation).
+
+### Genetic Algorithm
+ The genetic algorithm is a IA implemetation that wants to simulate the natural select, in this case, We will use the natural select to identify the best route.
+ <br>
+ In our implementation, we create a class called "Geracao", she is responsabile to create "Individuos", this "Individuos" are the routes. (Arrays of integers, where for wich integers in this array, we have a city).
+ <br>
+ The "Geracao"  will crete some possibles routes, randomly, after another class (This class, we called "Darwin") will look this routes and select somes to pass to next step
+ <br>
+ <br>
+ The class "Darwin" define how good a route was, e based in how good she was, give to the route a percent to survive.
+ <br>
+ "Darwin", select the two routes using a method called "Two-Needle Roulette", and select the best route too.
+ <br>
+ "The "Geracao" take this three routes and create new routes based in this three. We generate new routes randomly too, e repeat the process entil we want to stop, but when we will want to stop?
+  <ul>
+   <li>Time of execution</li>
+     <dl>The process will stop whem the program runs for 15 minutes, because it's the time we have to show the professor</dl>
+   <li>Quantitu of routes</li>
+     <dl>If, we indentify a route 5 times like like good, so i take this like the best route.</dl>
+  </ul>
+### Try out program:
+<br>
+ To try, just download the file CaixeiroViajante.exe in the zip at the end of this text.
+<br>
+ In the zip file, you will find a model to now how to especify the Entries, a txt file, where wich line is a execution of the problem, the line has to write in this way:
+<br>
+<br>
+  <ol>
+    <li>Primeira posição: </li>
+      <dl>Quantity of cities (has to by a number Below 21)</dl>
+    <li>Distance of the cities</li>
+     <dl>All values has to be separated by <strong>";"</strong></dl>
+  </ol>
+
+ Exemple
+  <br>
+  ![image](https://user-images.githubusercontent.com/61763480/173257726-39bbb306-0d5b-4921-a08e-84838858b9e5.png)
+  <br>
+[CaixeiroViajante.zip](https://github.com/BrendonAraujo/CaixeiroViajante/files/8886926/CaixeiroViajante.zip)
+
+--------------------------------------------------------------------------------------------------------------------
+
+PT=Br
 ## Problema:
   
   Caixeiro Viajante é um problema matemático, mas para explicar o problema trocarei o caixeiro por um caminhão.
